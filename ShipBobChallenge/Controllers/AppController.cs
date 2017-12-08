@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ShipBobChallenge.ViewModels;
 
 namespace ShipBobChallenge.Controllers
 {
@@ -13,7 +14,7 @@ namespace ShipBobChallenge.Controllers
             return View();
         }
 
-
+        
         [HttpGet("adduser")]
         public IActionResult AddUser()
         { 
@@ -21,7 +22,7 @@ namespace ShipBobChallenge.Controllers
         }
 
         [HttpPost("adduser")]
-        public IActionResult AddUser(object model)
+        public IActionResult AddUser(UserViewModel model)
         {
             return View();
         }
