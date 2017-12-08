@@ -14,13 +14,13 @@ namespace ShipBobChallenge.Controllers
         }
 
 
-        [HttpGet("AddUser")]
+        [HttpGet("adduser")]
         public IActionResult AddUser()
-        {
-            return View();
+        { 
+           return View();
         }
 
-        [HttpPost("AddUser")]
+        [HttpPost("adduser")]
         public IActionResult AddUser(object model)
         {
             return View();
@@ -29,20 +29,14 @@ namespace ShipBobChallenge.Controllers
 
         public IActionResult CreateOrder()
         {
-
-            ViewBag.Title = "Create Order";
-
             return View();
         }
 
 
         public IActionResult UserOrders()
         {
-
-            ViewBag.Title = "View User Orders";
-
-            throw new InvalidOperationException("Bad things happen!");
-
+          
+            //throw new InvalidOperationException("Bad things happen!");
             return View();
         }
 
