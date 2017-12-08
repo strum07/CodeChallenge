@@ -41,6 +41,8 @@ namespace ShipBobChallenge.Controllers
 
             ViewBag.Title = "View User Orders";
 
+            throw new InvalidOperationException("Bad things happen!");
+
             return View();
         }
 

@@ -30,6 +30,10 @@ namespace ShipBobChallenge
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
             
 
             //spit static files nested in wwwroot(root of webserver?)
