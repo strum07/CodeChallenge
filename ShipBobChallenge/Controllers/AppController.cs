@@ -24,7 +24,20 @@ namespace ShipBobChallenge.Controllers
         [HttpPost("adduser")]
         public IActionResult AddUser(UserViewModel model)
         {
+
+            if (ModelState.IsValid)
+            {
+                //do something and
+
+                
+            }
+            else
+            {
+                //Show what's wrong
+            }
+
             return View();
+
         }
 
 
