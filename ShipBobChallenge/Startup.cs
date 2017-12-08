@@ -20,15 +20,11 @@ namespace ShipBobChallenge
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            //setting default to Index
+            app.UseDefaultFiles();
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //spit static files nested in wwwroot(root of webserver?)
+            app.UseStaticFiles();
         }
     }
 }
